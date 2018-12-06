@@ -6,7 +6,7 @@ import torch.nn as nn
 from torch.utils import model_zoo
 import copy
 import numpy as np
-import modules
+import models.modules as modules
 from torchvision import utils
 
 import models.senet as senet
