@@ -54,7 +54,7 @@ def main():
         batch_size = 32
     else:
         model = model.cuda()
-        batch_size = 8
+        batch_size = 1
 
     cudnn.benchmark = True
     optimizer = torch.optim.Adam(model.parameters(), args.lr, weight_decay=args.weight_decay)
