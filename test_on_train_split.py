@@ -12,7 +12,7 @@ import sobel
 
 def main():
     model = define_model(is_resnet=False, is_densenet=False, is_senet=True)
-    model = torch.nn.DataParallel(model).cuda()
+    model = model.cuda()
     model.load_state_dict(torch.load('./pretrained_model/train_split_epoch_1'))
 
     test_loader = loaddata.getTestingData(1)
