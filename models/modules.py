@@ -6,9 +6,9 @@ import torch.nn as nn
 from torch.utils import model_zoo
 import copy
 import numpy as np
-import senet
-import resnet
-import densenet
+import models.senet as senet
+import models.resnet as resnet
+import models.densenet as densenet
 
 class _UpProjection(nn.Sequential):
 

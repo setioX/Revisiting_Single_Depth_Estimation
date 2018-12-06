@@ -9,9 +9,9 @@ import numpy as np
 import modules
 from torchvision import utils
 
-import senet
-import resnet
-import densenet
+import models.senet as senet
+import models.resnet as resnet
+import models.densenet as densenet
 
 class model(nn.Module):
     def __init__(self, Encoder, num_features, block_channel):
